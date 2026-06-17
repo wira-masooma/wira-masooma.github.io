@@ -1,16 +1,44 @@
-# React + Vite
+# Wira Masooma Zaidi — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A data-driven, interactive portfolio website built for computational biology and data science. The site features an "Algorithmic Biology" aesthetic with glassmorphism, dynamic floating background shapes, and smooth scroll animations.
 
-Currently, two official plugins are available:
+## Tech Stack
+- **React & Vite**: Fast development and optimized production builds.
+- **Tailwind CSS v4**: Utility-first styling with a custom ice-blue and baby-pink color palette.
+- **Framer Motion**: For scroll reveals, hover states, and dynamic SVG background blobs.
+- **Lucide React**: Clean, modern iconography.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## How to Edit Content
+The site uses a data-driven architecture. You do not need to edit the React components to update your information. All content lives in the `src/data/` folder:
 
-## React Compiler
+- `profile.js`: Your name, tagline, email, and social links.
+- `education.js`: Your degrees and university details.
+- `experience.js`: Your work and leadership roles.
+- `projects.js`: Your featured case studies and research projects.
+- `awards.js`: Your scholarships and achievements.
+- `skills.js`: Your technical skills categorized.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+To add a new project or experience, simply add a new object to the array in the respective file. The UI will automatically render it!
 
-## Expanding the ESLint configuration
+## Running Locally
+To preview the website on your own machine:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open `http://localhost:5173/` in your browser.
+
+## Deployment
+The website is configured to automatically deploy to **GitHub Pages** using GitHub Actions. 
+Every time you commit and push changes to the `main` branch, the `deploy.yml` workflow will build the site and publish it live.
+
+```bash
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
