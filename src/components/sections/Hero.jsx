@@ -48,7 +48,7 @@ export default function Hero() {
               </Button>
               <Button
                 variant="secondary"
-                href={`${import.meta.env.BASE_URL}resume/Wira_Masooma_Zaidi_Resume.pdf`}
+                href={`${import.meta.env.BASE_URL}resume/CV_Zaidi_Wira.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
