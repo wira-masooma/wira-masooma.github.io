@@ -47,8 +47,7 @@ export const experience = [
     highlights: [
       "Hosted and organized workshops about flutter, HTML, javascript and Object Oriented Programming guiding 600+ partcipants at each session",
       "Organized one of the largest hackathons with intensive programming challenges in the country with over 500 computer science students tailored for both beginners and advanced programmers",
-      "Started an initative to introduce women in rural areas of Pakistan, especially housewives, to technology and
-programming, empowering and promoting women in STEM",
+      "Started an initative to introduce women in rural areas of Pakistan, especially housewives, to technology and programming, empowering and promoting women in STEM",
     ],
     tags: ["Project Management", "Operations", "Community Building"],
   },
